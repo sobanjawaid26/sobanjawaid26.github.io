@@ -742,6 +742,85 @@ h1 {
   border-radius: 16px;
 }
 
+.apps .app-card + .app-card {
+  margin-top: 16px;
+}
+
+/* PasswordClue product page */
+.passwordclue-page,
+.password-document {
+  --accent: #522da8;
+  --accent-dark: #3d1d87;
+  --accent-soft: #f0ebfa;
+  --accent-line: #d9ccef;
+  --ink-muted: #68626f;
+  --panel: #f5f1fb;
+}
+
+.password-hero {
+  color: #fff;
+  background: radial-gradient(circle at 50% 10%, #6540bd 0, #351d69 48%, #180f26 100%);
+  border-color: #4a2a86;
+  box-shadow: 0 28px 70px rgb(52 24 95 / 18%);
+}
+
+.password-hero .eyebrow,
+.password-hero .product-lede {
+  color: #e5dafa;
+}
+
+.password-hero .app-icon {
+  border-color: rgb(255 255 255 / 20%);
+  box-shadow: 0 18px 48px rgb(0 0 0 / 35%);
+}
+
+.password-hero .primary-action {
+  color: #3d1d87;
+  background: #fff;
+  border-color: #fff;
+}
+
+.password-hero .primary-action:hover,
+.password-hero .primary-action:focus-visible,
+.password-hero .text-action {
+  color: #fff;
+}
+
+.safety-banner {
+  margin: 0 auto clamp(72px, 9vw, 104px);
+  padding: 18px 24px;
+  color: #453b4f;
+  background: #fff;
+  border: 1px solid #ded4e7;
+  border-left: 5px solid #522da8;
+  border-radius: 12px;
+  text-align: center;
+}
+
+.passwordclue-page .privacy-callout p:not(.eyebrow) {
+  margin: 20px auto 0;
+  color: var(--ink-muted);
+}
+
+.password-document code {
+  padding: 2px 5px;
+  background: #eee8f7;
+  border-radius: 4px;
+  font-size: .9em;
+}
+
+.password-document h3 {
+  margin: 26px 0 6px;
+  font-size: 1.05rem;
+}
+
+.warning-copy {
+  padding: 16px 18px;
+  color: #4a255a !important;
+  background: #f1e9f7;
+  border-radius: 10px;
+}
+
 .app-summary {
   min-width: 0;
   display: flex;
