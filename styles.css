@@ -843,6 +843,215 @@ h1 {
   color: var(--ink-muted);
 }
 
+/* Scrolliqo product page */
+.scrolliqo-page,
+.scrolliqo-document {
+  --accent: #5a4db5;
+  --accent-dark: #40358f;
+  --accent-soft: #eeecfb;
+  --accent-line: #d4cff2;
+  --ink-muted: #656176;
+  --panel: #f4f2fc;
+}
+
+.scrolliqo-hero {
+  background:
+    radial-gradient(circle at 14% 12%, rgb(120 101 222 / 18%), transparent 34%),
+    linear-gradient(145deg, #faf9ff, #eeebfb);
+  box-shadow: 0 28px 70px rgb(64 53 143 / 13%);
+}
+
+.scrolliqo-hero .app-icon {
+  border-color: rgb(90 77 181 / 24%);
+  box-shadow: 0 18px 48px rgb(64 53 143 / 22%);
+}
+
+.scrolliqo-flow,
+.insights-section {
+  padding: clamp(80px, 10vw, 120px) 0;
+  border-top: 1px solid #dededb;
+}
+
+.reflection-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 18px;
+}
+
+.reflection-grid article {
+  min-height: 240px;
+  padding: clamp(26px, 4vw, 38px);
+  background: var(--accent-soft);
+  border: 1px solid var(--accent-line);
+  border-radius: 18px;
+}
+
+.reflection-grid span {
+  width: 36px;
+  height: 36px;
+  margin-bottom: 34px;
+  display: grid;
+  place-items: center;
+  color: #fff;
+  background: var(--accent-dark);
+  border-radius: 50%;
+  font-size: .78rem;
+  font-weight: 700;
+}
+
+.reflection-grid h3 {
+  margin-bottom: 9px;
+  font-size: 1.35rem;
+  letter-spacing: -.025em;
+}
+
+.reflection-grid p,
+.insights-copy > p:not(.eyebrow),
+.scrolliqo-page .privacy-callout p:not(.eyebrow) {
+  color: var(--ink-muted);
+}
+
+.insights-section {
+  display: grid;
+  grid-template-columns: minmax(0, 1.05fr) minmax(300px, .95fr);
+  gap: clamp(48px, 9vw, 96px);
+  align-items: center;
+}
+
+.insights-copy h2 {
+  margin-bottom: 22px;
+  font-size: clamp(2.1rem, 5vw, 4rem);
+  line-height: 1.08;
+  letter-spacing: -.05em;
+}
+
+.insight-metrics {
+  margin: 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 12px;
+  list-style: none;
+}
+
+.insight-metrics li {
+  min-height: 150px;
+  padding: 22px;
+  background: #fff;
+  border: 1px solid var(--accent-line);
+  border-radius: 14px;
+}
+
+.insight-metrics strong,
+.insight-metrics span {
+  display: block;
+}
+
+.insight-metrics strong {
+  margin-bottom: 8px;
+}
+
+.insight-metrics span {
+  color: var(--ink-muted);
+  font-size: .9rem;
+}
+
+.scrolliqo-page .privacy-callout p:not(.eyebrow) {
+  margin: 20px auto 0;
+}
+
+.scrolliqo-document h3 {
+  margin: 28px 0 8px;
+  font-size: 1.05rem;
+}
+
+/* Pendiqo product page */
+.pendiqo-page,
+.pendiqo-document {
+  --accent: #208f82;
+  --accent-dark: #12685f;
+  --accent-soft: #edf5ec;
+  --accent-line: #c9dfd8;
+  --ink-muted: #5d6964;
+  --panel: #f2f7f3;
+}
+
+.pendiqo-hero {
+  background:
+    radial-gradient(circle at 86% 12%, rgb(32 143 130 / 17%), transparent 32%),
+    linear-gradient(145deg, #fffaf1, #edf5ec);
+  box-shadow: 0 28px 70px rgb(18 104 95 / 13%);
+}
+
+.pendiqo-hero .app-icon {
+  border-color: rgb(32 143 130 / 24%);
+  box-shadow: 0 18px 48px rgb(18 104 95 / 20%);
+}
+
+.pendiqo-flow,
+.reminder-section {
+  padding: clamp(80px, 10vw, 120px) 0;
+  border-top: 1px solid #dededb;
+}
+
+.reminder-section {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(320px, 1fr);
+  align-items: center;
+  gap: clamp(48px, 9vw, 96px);
+}
+
+.reminder-copy h2 {
+  margin-bottom: 22px;
+  font-size: clamp(2.1rem, 5vw, 4rem);
+  line-height: 1.08;
+  letter-spacing: -.05em;
+}
+
+.reminder-copy > p:not(.eyebrow),
+.pendiqo-page .privacy-callout p:not(.eyebrow) {
+  color: var(--ink-muted);
+}
+
+.reminder-levels {
+  display: grid;
+  gap: 12px;
+}
+
+.reminder-levels article {
+  padding: 22px 24px;
+  display: grid;
+  grid-template-columns: 110px 1fr;
+  gap: 22px;
+  align-items: baseline;
+  background: #fff;
+  border: 1px solid var(--accent-line);
+  border-radius: 14px;
+}
+
+.reminder-levels span {
+  color: var(--accent-dark);
+  font-weight: 700;
+}
+
+.reminder-levels p {
+  margin-bottom: 0;
+  color: var(--ink-muted);
+}
+
+.pendiqo-caution {
+  border-left-color: var(--accent);
+}
+
+.pendiqo-page .privacy-callout p:not(.eyebrow) {
+  margin: 20px auto 0;
+}
+
+.pendiqo-document h3 {
+  margin: 28px 0 8px;
+  font-size: 1.05rem;
+}
+
 .warning-copy {
   padding: 16px 18px;
   color: #4a255a !important;
@@ -1030,6 +1239,37 @@ footer p {
 
   .technology-grid article:last-child {
     grid-column: auto;
+  }
+
+  .reflection-grid,
+  .insights-section {
+    grid-template-columns: 1fr;
+  }
+
+  .reflection-grid article {
+    min-height: auto;
+  }
+
+  .insights-section {
+    gap: 36px;
+  }
+
+  .reminder-section {
+    grid-template-columns: 1fr;
+    gap: 36px;
+  }
+
+  .reminder-levels article {
+    grid-template-columns: 1fr;
+    gap: 6px;
+  }
+
+  .insight-metrics {
+    grid-template-columns: 1fr;
+  }
+
+  .insight-metrics li {
+    min-height: auto;
   }
 
   .product-hero {
