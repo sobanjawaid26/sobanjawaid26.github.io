@@ -386,7 +386,7 @@ h1 {
   font-size: 0.9em;
 }
 
-/* SixtyFifteen product page */
+/* Sessyn product page */
 .product-page {
   --accent: #526b86;
   --accent-dark: #344b63;
@@ -746,9 +746,9 @@ h1 {
   margin-top: 16px;
 }
 
-/* PasswordClue product page */
-.passwordclue-page,
-.password-document {
+/* Cluviqo product page */
+.cluviqo-page,
+.cluviqo-document {
   --accent: #522da8;
   --accent-dark: #3d1d87;
   --accent-soft: #f0ebfa;
@@ -757,32 +757,32 @@ h1 {
   --panel: #f5f1fb;
 }
 
-.password-hero {
+.cluviqo-hero {
   color: #fff;
   background: radial-gradient(circle at 50% 10%, #6540bd 0, #351d69 48%, #180f26 100%);
   border-color: #4a2a86;
   box-shadow: 0 28px 70px rgb(52 24 95 / 18%);
 }
 
-.password-hero .eyebrow,
-.password-hero .product-lede {
+.cluviqo-hero .eyebrow,
+.cluviqo-hero .product-lede {
   color: #e5dafa;
 }
 
-.password-hero .app-icon {
+.cluviqo-hero .app-icon {
   border-color: rgb(255 255 255 / 20%);
   box-shadow: 0 18px 48px rgb(0 0 0 / 35%);
 }
 
-.password-hero .primary-action {
+.cluviqo-hero .primary-action {
   color: #3d1d87;
   background: #fff;
   border-color: #fff;
 }
 
-.password-hero .primary-action:hover,
-.password-hero .primary-action:focus-visible,
-.password-hero .text-action {
+.cluviqo-hero .primary-action:hover,
+.cluviqo-hero .primary-action:focus-visible,
+.cluviqo-hero .text-action {
   color: #fff;
 }
 
@@ -797,26 +797,26 @@ h1 {
   text-align: center;
 }
 
-.passwordclue-page .privacy-callout p:not(.eyebrow) {
+.cluviqo-page .privacy-callout p:not(.eyebrow) {
   margin: 20px auto 0;
   color: var(--ink-muted);
 }
 
-.password-document code {
+.cluviqo-document code {
   padding: 2px 5px;
   background: #eee8f7;
   border-radius: 4px;
   font-size: .9em;
 }
 
-.password-document h3 {
+.cluviqo-document h3 {
   margin: 26px 0 6px;
   font-size: 1.05rem;
 }
 
-/* MyQueue product page */
-.myqueue-page,
-.myqueue-document {
+/* Zuqori product page */
+.zuqori-page,
+.zuqori-document {
   --accent: #098d92;
   --accent-dark: #056e73;
   --accent-soft: #e7f5f3;
@@ -825,7 +825,7 @@ h1 {
   --panel: #edf7f6;
 }
 
-.myqueue-hero {
+.zuqori-hero {
   background:
     radial-gradient(circle at 10% 15%, rgb(137 72 255 / 12%), transparent 30%),
     radial-gradient(circle at 90% 82%, rgb(12 190 145 / 16%), transparent 32%),
@@ -833,12 +833,12 @@ h1 {
   box-shadow: 0 28px 70px rgb(9 112 116 / 12%);
 }
 
-.myqueue-hero .app-icon {
+.zuqori-hero .app-icon {
   border-color: rgb(8 121 126 / 25%);
   box-shadow: 0 18px 48px rgb(44 30 82 / 20%);
 }
 
-.myqueue-page .privacy-callout p:not(.eyebrow) {
+.zuqori-page .privacy-callout p:not(.eyebrow) {
   margin: 20px auto 0;
   color: var(--ink-muted);
 }
