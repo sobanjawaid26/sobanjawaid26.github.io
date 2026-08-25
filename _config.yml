@@ -1,1 +1,9 @@
 theme: jekyll-theme-slate
+
+# Keep unreleased app pages in the repository without publishing their URLs.
+exclude:
+  - sessyn
+  - zuqori
+  - cluviqo
+  - scrolliqo
+  - pendiqo
