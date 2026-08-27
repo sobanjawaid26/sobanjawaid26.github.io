@@ -858,8 +858,7 @@ h1 {
 .zuqori-site footer,
 .zuqori-site .product-features,
 .zuqori-site .closing-section,
-.zuqori-workflow,
-.zuqori-backup {
+.zuqori-workflow {
   border-color: #2b2d36;
 }
 
@@ -884,16 +883,13 @@ h1 {
 }
 
 .zuqori-site .feature-list article,
-.zuqori-site .reflection-grid article,
-.zuqori-site .backup-options article {
+.zuqori-site .reflection-grid article {
   background: #17181f;
   border-color: #30323d;
 }
 
 .zuqori-site .feature-list p,
-.zuqori-site .reflection-grid p,
-.zuqori-site .zuqori-backup p,
-.zuqori-site .backup-options span {
+.zuqori-site .reflection-grid p {
   color: #b7bac6;
 }
 
@@ -907,8 +903,7 @@ h1 {
   border-color: #315057;
 }
 
-.zuqori-workflow,
-.zuqori-backup {
+.zuqori-workflow {
   padding: clamp(80px, 10vw, 120px) 0;
   border-top: 1px solid #2b2d36;
 }
@@ -930,41 +925,6 @@ h1 {
 .content-note p {
   margin: 10px 0 0;
   color: #b7bac6;
-}
-
-.zuqori-backup {
-  display: grid;
-  grid-template-columns: minmax(0, 1fr) minmax(320px, 1fr);
-  align-items: center;
-  gap: clamp(48px, 9vw, 96px);
-}
-
-.zuqori-backup h2 {
-  margin-bottom: 20px;
-  font-size: clamp(2.1rem, 5vw, 4rem);
-  line-height: 1.08;
-  letter-spacing: -.05em;
-}
-
-.backup-options {
-  display: grid;
-  gap: 12px;
-}
-
-.backup-options article {
-  padding: 24px;
-  border: 1px solid;
-  border-radius: 14px;
-}
-
-.backup-options strong,
-.backup-options span {
-  display: block;
-}
-
-.backup-options strong {
-  margin-bottom: 7px;
-  color: #88eef5;
 }
 
 .zuqori-site .app-store-button.is-disabled {
@@ -1415,11 +1375,6 @@ footer p {
   .reminder-levels article {
     grid-template-columns: 1fr;
     gap: 6px;
-  }
-
-  .zuqori-backup {
-    grid-template-columns: 1fr;
-    gap: 36px;
   }
 
   .insight-metrics {
