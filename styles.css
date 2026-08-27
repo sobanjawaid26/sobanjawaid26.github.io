@@ -821,25 +821,174 @@ h1 {
 /* Zuqori product page */
 .zuqori-page,
 .zuqori-document {
-  --accent: #098d92;
-  --accent-dark: #056e73;
-  --accent-soft: #e7f5f3;
-  --accent-line: #bcdedb;
-  --ink-muted: #5e6969;
-  --panel: #edf7f6;
+  --accent: #33d3df;
+  --accent-dark: #88eef5;
+  --accent-soft: #191a22;
+  --accent-line: #30323d;
+  --ink-muted: #b7bac6;
+  --panel: #15161c;
 }
 
 .zuqori-hero {
+  color: #f7f7fb;
   background:
-    radial-gradient(circle at 10% 15%, rgb(137 72 255 / 12%), transparent 30%),
-    radial-gradient(circle at 90% 82%, rgb(12 190 145 / 16%), transparent 32%),
-    linear-gradient(145deg, #f8f7ff, #eaf7f5);
-  box-shadow: 0 28px 70px rgb(9 112 116 / 12%);
+    radial-gradient(circle at 10% 15%, rgb(137 72 255 / 28%), transparent 34%),
+    radial-gradient(circle at 90% 82%, rgb(12 190 200 / 22%), transparent 34%),
+    linear-gradient(145deg, #17151e, #0d1719);
+  box-shadow: 0 28px 70px rgb(0 0 0 / 32%);
 }
 
 .zuqori-hero .app-icon {
-  border-color: rgb(8 121 126 / 25%);
-  box-shadow: 0 18px 48px rgb(44 30 82 / 20%);
+  border-color: rgb(255 255 255 / 18%);
+  box-shadow: 0 18px 48px rgb(0 0 0 / 38%);
+}
+
+.zuqori-hero .product-lede,
+.zuqori-hero .eyebrow,
+.zuqori-hero .text-action {
+  color: #d9dbe4;
+}
+
+.zuqori-site {
+  color: #f4f4f7;
+  background: #0d0e12;
+}
+
+.zuqori-site .site-header,
+.zuqori-site footer,
+.zuqori-site .product-features,
+.zuqori-site .closing-section,
+.zuqori-workflow,
+.zuqori-backup {
+  border-color: #2b2d36;
+}
+
+.zuqori-site .brand,
+.zuqori-site a {
+  color: inherit;
+}
+
+.zuqori-site .nav-links a,
+.zuqori-site .footer-links a,
+.zuqori-site .document section p,
+.zuqori-site .document section li,
+.zuqori-site .document-header p {
+  color: #b7bac6;
+}
+
+.zuqori-site .nav-links a:hover,
+.zuqori-site .nav-links a:focus-visible,
+.zuqori-site .footer-links a:hover,
+.zuqori-site .footer-links a:focus-visible {
+  color: #fff;
+}
+
+.zuqori-site .feature-list article,
+.zuqori-site .reflection-grid article,
+.zuqori-site .backup-options article {
+  background: #17181f;
+  border-color: #30323d;
+}
+
+.zuqori-site .feature-list p,
+.zuqori-site .reflection-grid p,
+.zuqori-site .zuqori-backup p,
+.zuqori-site .backup-options span {
+  color: #b7bac6;
+}
+
+.zuqori-site .reflection-grid span {
+  color: #0d0e12;
+  background: #65e5ed;
+}
+
+.zuqori-site .privacy-callout {
+  background: linear-gradient(145deg, #171820, #102023);
+  border-color: #315057;
+}
+
+.zuqori-workflow,
+.zuqori-backup {
+  padding: clamp(80px, 10vw, 120px) 0;
+  border-top: 1px solid #2b2d36;
+}
+
+.content-note {
+  margin: 0 auto clamp(72px, 9vw, 104px);
+  padding: clamp(24px, 4vw, 34px);
+  background: #17181f;
+  border: 1px solid #30323d;
+  border-left: 5px solid #ff694f;
+  border-radius: 14px;
+}
+
+.content-note strong {
+  display: block;
+  font-size: clamp(1.1rem, 2vw, 1.3rem);
+}
+
+.content-note p {
+  margin: 10px 0 0;
+  color: #b7bac6;
+}
+
+.zuqori-backup {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(320px, 1fr);
+  align-items: center;
+  gap: clamp(48px, 9vw, 96px);
+}
+
+.zuqori-backup h2 {
+  margin-bottom: 20px;
+  font-size: clamp(2.1rem, 5vw, 4rem);
+  line-height: 1.08;
+  letter-spacing: -.05em;
+}
+
+.backup-options {
+  display: grid;
+  gap: 12px;
+}
+
+.backup-options article {
+  padding: 24px;
+  border: 1px solid;
+  border-radius: 14px;
+}
+
+.backup-options strong,
+.backup-options span {
+  display: block;
+}
+
+.backup-options strong {
+  margin-bottom: 7px;
+  color: #88eef5;
+}
+
+.zuqori-site .app-store-button.is-disabled {
+  color: #91949e;
+  background: #25262d;
+  border-color: #343640;
+  cursor: default;
+  pointer-events: none;
+}
+
+.support-contact {
+  width: fit-content;
+  margin-top: 28px;
+  padding: 16px 20px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px 18px;
+  background: #17181f;
+  border: 1px solid #30323d;
+  border-radius: 12px;
+}
+
+.support-contact strong {
+  color: #fff;
 }
 
 .zuqori-page .privacy-callout p:not(.eyebrow) {
@@ -1266,6 +1415,11 @@ footer p {
   .reminder-levels article {
     grid-template-columns: 1fr;
     gap: 6px;
+  }
+
+  .zuqori-backup {
+    grid-template-columns: 1fr;
+    gap: 36px;
   }
 
   .insight-metrics {

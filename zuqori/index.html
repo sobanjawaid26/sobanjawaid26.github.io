@@ -3,76 +3,75 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Zuqori is a private, on-device iPhone app for saving, choosing, and remembering everything you want to try.">
-  <title>Zuqori — Everything you want to try, One Queue</title>
+  <meta name="description" content="Zuqori is a private, offline iPhone queue for remembering movies, books, games, places, activities, and more to try later.">
+  <title>Zuqori — Queue for later</title>
   <link rel="stylesheet" href="../styles.css">
 </head>
-<body>
+<body class="zuqori-site">
   <div class="page">
     <header class="site-header">
       <nav class="site-nav" aria-label="Primary navigation">
         <a class="brand" href="/zuqori/" aria-current="page">Zuqori</a>
         <ul class="nav-links">
+          <li><a href="#how-it-works">How it works</a></li>
           <li><a href="#features">Features</a></li>
           <li><a href="/zuqori/privacy.html">Privacy</a></li>
           <li><a href="/zuqori/support.html">Support</a></li>
-          <li><a href="/">All Apps</a></li>
         </ul>
       </nav>
     </header>
-
     <main class="product-page zuqori-page">
       <section class="product-hero zuqori-hero" aria-labelledby="page-title">
         <div class="product-copy">
           <img class="app-icon" src="/zuqori/assets/app-icon.png" width="112" height="112" alt="Zuqori app icon">
-          <p class="eyebrow">A universal queue for things to try</p>
-          <h1 id="page-title">Everything you want to try.<br>One Queue.</h1>
-          <p class="product-lede">Save movies, shows, books, games, restaurants, places, and activities together—then find the right thing for the moment and remember how it went.</p>
+          <p class="eyebrow">Private · Offline · iPhone</p>
+          <h1 id="page-title">Queue for later.</h1>
+          <p class="product-lede">Save the things you want to watch, read, play, eat, visit, or experience—all in one private queue.</p>
           <div class="hero-actions">
-            <a class="primary-action" href="#features">Explore features</a>
-            <a class="text-action" href="/zuqori/support.html">Get support <span aria-hidden="true">→</span></a>
+            <span class="app-store-button is-disabled" aria-disabled="true"><span><small>Coming soon to the</small>App Store</span></span>
+            <a class="text-action" href="#how-it-works">Learn how Zuqori works <span aria-hidden="true">↓</span></a>
           </div>
         </div>
       </section>
 
+      <aside class="content-note" aria-label="What Zuqori stores">
+        <strong>Zuqori helps you save only the names of movies, books, TV shows, games, places, and more—not the content itself.</strong>
+        <p>It does not stream, download, reproduce, or automatically fetch third-party content, artwork, descriptions, ratings, or reviews.</p>
+      </aside>
+
+      <section class="zuqori-workflow" id="how-it-works" aria-labelledby="workflow-title">
+        <div class="section-heading"><p class="eyebrow">Everything you want to try</p><h2 id="workflow-title">One private place.<br>Your choices, your context.</h2></div>
+        <div class="reflection-grid">
+          <article><span aria-hidden="true">01</span><h3>Save an idea</h3><p>Add a title, category, note, link, source, people context, time context, and optional Up Next status.</p></article>
+          <article><span aria-hidden="true">02</span><h3>Choose what is next</h3><p>Search, filter, sort, prioritize with Up Next, or let Pick for Me select from your own eligible items.</p></article>
+          <article><span aria-hidden="true">03</span><h3>Remember the experience</h3><p>Move it to Tried, record a reaction, add a personal review note, or return it to your Queue.</p></article>
+        </div>
+      </section>
+
       <section class="product-features" id="features" aria-labelledby="features-title">
-        <div class="section-heading">
-          <p class="eyebrow">Made for real-life decisions</p>
-          <h2 id="features-title">More useful than a list.<br>Still simple to keep.</h2>
-        </div>
+        <div class="section-heading"><p class="eyebrow">Useful beyond a list</p><h2 id="features-title">Organize now.<br>Decide when it matters.</h2></div>
         <div class="feature-list">
-          <article><span aria-hidden="true">01</span><h3>Universal queue</h3><p>Organize movies, TV shows, books, games, restaurants, places, and activities together.</p></article>
-          <article><span aria-hidden="true">02</span><h3>Useful context</h3><p>Save notes, links, where you found an idea, who it is for, and when it fits.</p></article>
-          <article><span aria-hidden="true">03</span><h3>Up Next priorities</h3><p>Move the things that matter most into a focused Up Next list.</p></article>
-          <article><span aria-hidden="true">04</span><h3>Pick for Me</h3><p>Narrow the queue by type, companions, and timing, then receive a fitting suggestion.</p></article>
-          <article><span aria-hidden="true">05</span><h3>Tried history</h3><p>Keep completed experiences and filter them by reaction or category.</p></article>
-          <article><span aria-hidden="true">06</span><h3>Private by design</h3><p>No account, analytics, advertising, or external recommendation service. Data stays on device.</p></article>
+          <article><span aria-hidden="true">01</span><h3>Universal Queue</h3><p>Save movies, TV shows, books, games, restaurants, places, activities, and other experiences.</p></article>
+          <article><span aria-hidden="true">02</span><h3>Search and organize</h3><p>Search saved information, filter by category, and sort by recently added, oldest, or title.</p></article>
+          <article><span aria-hidden="true">03</span><h3>Focused Up Next</h3><p>Maintain and reorder a shortlist with a configurable limit from one to ten items.</p></article>
+          <article><span aria-hidden="true">04</span><h3>Pick for Me</h3><p>Make a local, non-AI selection from eligible items using type, people, and time filters.</p></article>
+          <article><span aria-hidden="true">05</span><h3>Tried history</h3><p>Keep reactions and personal review notes, filter past experiences, or move them back to Queue.</p></article>
+          <article><span aria-hidden="true">06</span><h3>Duplicate warnings</h3><p>Get an on-device warning for matching links, identical titles, or very similar longer titles.</p></article>
         </div>
+      </section>
+
+      <section class="zuqori-backup" aria-labelledby="backup-title">
+        <div><p class="eyebrow">User-controlled backup</p><h2 id="backup-title">Take your Queue<br>with you.</h2><p>Export your items as a JSON file using Apple’s file interface. Import later by merging with current items or replacing them entirely.</p></div>
+        <div class="backup-options"><article><strong>Merge</strong><span>Add valid backup items alongside your current Queue.</span></article><article><strong>Replace</strong><span>Remove current items, then restore the selected valid backup.</span></article></div>
       </section>
 
       <aside class="privacy-callout" aria-labelledby="privacy-title">
-        <div>
-          <p class="eyebrow">Your interests are personal</p>
-          <h2 id="privacy-title">Stored on your device.<br>Not used to profile you.</h2>
-          <p>Zuqori works without an account and does not send your queue to analytics, advertising, or recommendation services.</p>
-        </div>
+        <div><p class="eyebrow">Private by design</p><h2 id="privacy-title">No account.<br>No tracking. No AI.</h2><p>Zuqori stores Queue information locally using Apple’s on-device technologies. There are no analytics, advertisements, third-party SDKs, or external recommendation services.</p></div>
         <a class="text-action" href="/zuqori/privacy.html">Read the Privacy Policy <span aria-hidden="true">→</span></a>
       </aside>
-
-      <section class="closing-section" aria-labelledby="closing-title">
-        <img class="app-icon app-icon-small" src="/zuqori/assets/app-icon.png" width="80" height="80" alt="">
-        <h2 id="closing-title">Everything you want to try, One Queue.</h2>
-        <p>Save it now. Choose it when the moment is right.</p>
-      </section>
+      <section class="closing-section" aria-labelledby="closing-title"><img class="app-icon app-icon-small" src="/zuqori/assets/app-icon.png" width="80" height="80" alt=""><h2 id="closing-title">Queue for later.</h2><p>Available for iPhone with iOS 17 or later.</p></section>
     </main>
-
-    <footer class="app-footer">
-      <p>&copy; 2026 Soban Jawaid</p>
-      <ul class="footer-links">
-        <li><a href="/zuqori/privacy.html">Privacy</a></li>
-        <li><a href="/zuqori/support.html">Support</a></li>
-      </ul>
-    </footer>
+    <footer class="app-footer"><p>&copy; 2026 MD SOBAN JAWAID</p><ul class="footer-links"><li><a href="/zuqori/">Zuqori</a></li><li><a href="/zuqori/privacy.html">Privacy</a></li><li><a href="/zuqori/support.html">Support</a></li><li><a href="mailto:sobanmuhammad26@icloud.com">Developer contact</a></li></ul></footer>
   </div>
 </body>
 </html>
