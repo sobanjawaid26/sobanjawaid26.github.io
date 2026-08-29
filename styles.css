@@ -750,9 +750,9 @@ h1 {
   margin-top: 16px;
 }
 
-/* Cluviqo product page */
-.cluviqo-page,
-.cluviqo-document {
+/* PasswordClue product page */
+.passwordclue-page,
+.passwordclue-document {
   --accent: #522da8;
   --accent-dark: #3d1d87;
   --accent-soft: #f0ebfa;
@@ -761,32 +761,32 @@ h1 {
   --panel: #f5f1fb;
 }
 
-.cluviqo-hero {
+.passwordclue-hero {
   color: #fff;
   background: radial-gradient(circle at 50% 10%, #6540bd 0, #351d69 48%, #180f26 100%);
   border-color: #4a2a86;
   box-shadow: 0 28px 70px rgb(52 24 95 / 18%);
 }
 
-.cluviqo-hero .eyebrow,
-.cluviqo-hero .product-lede {
+.passwordclue-hero .eyebrow,
+.passwordclue-hero .product-lede {
   color: #e5dafa;
 }
 
-.cluviqo-hero .app-icon {
+.passwordclue-hero .app-icon {
   border-color: rgb(255 255 255 / 20%);
   box-shadow: 0 18px 48px rgb(0 0 0 / 35%);
 }
 
-.cluviqo-hero .primary-action {
+.passwordclue-hero .primary-action {
   color: #3d1d87;
   background: #fff;
   border-color: #fff;
 }
 
-.cluviqo-hero .primary-action:hover,
-.cluviqo-hero .primary-action:focus-visible,
-.cluviqo-hero .text-action {
+.passwordclue-hero .primary-action:hover,
+.passwordclue-hero .primary-action:focus-visible,
+.passwordclue-hero .text-action {
   color: #fff;
 }
 
@@ -801,19 +801,19 @@ h1 {
   text-align: center;
 }
 
-.cluviqo-page .privacy-callout p:not(.eyebrow) {
+.passwordclue-page .privacy-callout p:not(.eyebrow) {
   margin: 20px auto 0;
   color: var(--ink-muted);
 }
 
-.cluviqo-document code {
+.passwordclue-document code {
   padding: 2px 5px;
   background: #eee8f7;
   border-radius: 4px;
   font-size: .9em;
 }
 
-.cluviqo-document h3 {
+.passwordclue-document h3 {
   margin: 26px 0 6px;
   font-size: 1.05rem;
 }
