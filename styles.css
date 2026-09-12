@@ -956,7 +956,9 @@ h1 {
   color: var(--ink-muted);
 }
 
-/* Scrolliqo product page */
+/* ScrollJournal and legacy Scrolliqo product pages */
+.scrolljournal-page,
+.scrolljournal-document,
 .scrolliqo-page,
 .scrolliqo-document {
   --accent: #5a4db5;
@@ -967,6 +969,7 @@ h1 {
   --panel: #f4f2fc;
 }
 
+.scrolljournal-hero,
 .scrolliqo-hero {
   background:
     radial-gradient(circle at 14% 12%, rgb(120 101 222 / 18%), transparent 34%),
@@ -974,11 +977,13 @@ h1 {
   box-shadow: 0 28px 70px rgb(64 53 143 / 13%);
 }
 
+.scrolljournal-hero .app-icon,
 .scrolliqo-hero .app-icon {
   border-color: rgb(90 77 181 / 24%);
   box-shadow: 0 18px 48px rgb(64 53 143 / 22%);
 }
 
+.scrolljournal-flow,
 .scrolliqo-flow,
 .insights-section {
   padding: clamp(80px, 10vw, 120px) 0;
@@ -1020,6 +1025,7 @@ h1 {
 
 .reflection-grid p,
 .insights-copy > p:not(.eyebrow),
+.scrolljournal-page .privacy-callout p:not(.eyebrow),
 .scrolliqo-page .privacy-callout p:not(.eyebrow) {
   color: var(--ink-muted);
 }
@@ -1069,16 +1075,144 @@ h1 {
   font-size: .9rem;
 }
 
+.scrolljournal-page .privacy-callout p:not(.eyebrow),
 .scrolliqo-page .privacy-callout p:not(.eyebrow) {
   margin: 20px auto 0;
 }
 
+.scrolljournal-document h3,
 .scrolliqo-document h3 {
   margin: 28px 0 8px;
   font-size: 1.05rem;
 }
 
-/* Pendiqo product page */
+.journal-preview-section {
+  padding: clamp(80px, 10vw, 120px) 0;
+  border-top: 1px solid #dededb;
+}
+
+.journal-preview-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: clamp(18px, 3vw, 28px);
+}
+
+.journal-preview {
+  min-width: 0;
+  margin: 0;
+  text-align: center;
+}
+
+.journal-preview-screen {
+  min-height: 390px;
+  padding: 34px 24px 24px;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  color: #29243f;
+  background: linear-gradient(165deg, #fff 0%, #f0edfc 100%);
+  border: 1px solid var(--accent-line);
+  border-radius: 30px;
+  box-shadow: 0 20px 44px rgb(64 53 143 / 10%);
+  text-align: left;
+}
+
+.journal-preview-screen .preview-kicker {
+  margin-bottom: 9px;
+  color: var(--accent-dark);
+  font-size: .72rem;
+  font-style: normal;
+  font-weight: 750;
+  letter-spacing: .08em;
+  text-transform: uppercase;
+}
+
+.journal-preview-screen strong {
+  margin-bottom: 32px;
+  font-size: 1.35rem;
+  line-height: 1.2;
+}
+
+.journal-preview-screen > i {
+  height: 46px;
+  margin-bottom: 13px;
+  display: block;
+  background: rgb(255 255 255 / 78%);
+  border: 1px solid #ddd8f3;
+  border-radius: 12px;
+}
+
+.journal-preview-screen > i::after {
+  width: 58%;
+  height: 7px;
+  margin: 18px 14px;
+  display: block;
+  background: #d1cbed;
+  border-radius: 999px;
+  content: "";
+}
+
+.journal-preview-screen > i.preview-line-short::after {
+  width: 38%;
+}
+
+.journal-preview-screen > b {
+  margin-top: auto;
+  padding: 12px;
+  color: #fff;
+  background: var(--accent-dark);
+  border-radius: 11px;
+  font-size: .82rem;
+  text-align: center;
+}
+
+.preview-metrics {
+  margin-bottom: 18px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 8px;
+}
+
+.preview-metrics i {
+  height: 82px;
+  display: block;
+  background: linear-gradient(to top, #b9afe9 38%, #f7f5ff 38%);
+  border: 1px solid #ddd8f3;
+  border-radius: 10px;
+}
+
+.preview-metrics i:nth-child(2) {
+  background: linear-gradient(to top, #8e80d7 68%, #f7f5ff 68%);
+}
+
+.preview-metrics i:nth-child(3) {
+  background: linear-gradient(to top, #6557bd 54%, #f7f5ff 54%);
+}
+
+.journal-preview figcaption {
+  padding: 16px 8px 0;
+  color: var(--ink-muted);
+  font-size: .9rem;
+  font-weight: 650;
+}
+
+.preview-note {
+  margin: 30px auto 0;
+  color: var(--ink-muted);
+  font-size: .82rem;
+  text-align: center;
+}
+
+.scrolljournal-footer .trademark-note {
+  max-width: 780px;
+  color: #777773;
+  font-size: .78rem;
+  line-height: 1.55;
+}
+
+/* NudgeOnn and legacy Pendiqo product pages */
+.nudgeonn-page,
+.nudgeonn-document,
 .pendiqo-page,
 .pendiqo-document {
   --accent: #208f82;
@@ -1089,6 +1223,7 @@ h1 {
   --panel: #f2f7f3;
 }
 
+.nudgeonn-hero,
 .pendiqo-hero {
   background:
     radial-gradient(circle at 86% 12%, rgb(32 143 130 / 17%), transparent 32%),
@@ -1096,11 +1231,13 @@ h1 {
   box-shadow: 0 28px 70px rgb(18 104 95 / 13%);
 }
 
+.nudgeonn-hero .app-icon,
 .pendiqo-hero .app-icon {
   border-color: rgb(32 143 130 / 24%);
   box-shadow: 0 18px 48px rgb(18 104 95 / 20%);
 }
 
+.nudgeonn-flow,
 .pendiqo-flow,
 .reminder-section {
   padding: clamp(80px, 10vw, 120px) 0;
@@ -1122,6 +1259,7 @@ h1 {
 }
 
 .reminder-copy > p:not(.eyebrow),
+.nudgeonn-page .privacy-callout p:not(.eyebrow),
 .pendiqo-page .privacy-callout p:not(.eyebrow) {
   color: var(--ink-muted);
 }
@@ -1152,17 +1290,28 @@ h1 {
   color: var(--ink-muted);
 }
 
+.nudgeonn-caution,
 .pendiqo-caution {
   border-left-color: var(--accent);
 }
 
+.nudgeonn-page .privacy-callout p:not(.eyebrow),
 .pendiqo-page .privacy-callout p:not(.eyebrow) {
   margin: 20px auto 0;
 }
 
+.nudgeonn-document h3,
 .pendiqo-document h3 {
   margin: 28px 0 8px;
   font-size: 1.05rem;
+}
+
+.nudgeonn-screenshots {
+  grid-template-columns: minmax(0, 220px);
+}
+
+.support-heading .app-icon {
+  margin-bottom: 28px;
 }
 
 .warning-copy {
@@ -1355,8 +1504,13 @@ footer p {
   }
 
   .reflection-grid,
+  .journal-preview-grid,
   .insights-section {
     grid-template-columns: 1fr;
+  }
+
+  .journal-preview-screen {
+    min-height: 340px;
   }
 
   .reflection-grid article {
