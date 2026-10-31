@@ -1,0 +1,204 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Scroll Journal is a privacy-first social-media reflection journal for iPhone and iPad, designed and developed by Soban Jawaid.">
+  <meta property="og:title" content="Scroll Journal — Product Case Study">
+  <meta property="og:description" content="A private journal for understanding how social media affects your time, mood, and attention.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://sobanjawaid26.github.io/projects/scroll-journal/">
+  <meta property="og:image" content="https://sobanjawaid26.github.io/projects/scroll-journal/assets/screenshots/journal-home.webp">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="canonical" href="https://sobanjawaid26.github.io/projects/scroll-journal/">
+  <link rel="icon" href="/scrolljournal/assets/app-icon.png" type="image/png">
+  <title>Scroll Journal — Product Case Study</title>
+  <link rel="stylesheet" href="/styles.css">
+</head>
+<body class="developer-portfolio-site systems-portfolio-site scroll-case-study">
+  <a class="dev-skip-link" href="#main-content">Skip to content</a>
+
+  <header class="developer-header systems-header">
+    <div class="developer-header-inner">
+      <a class="dev-brand systems-brand" href="/" aria-label="Soban Jawaid portfolio home">
+        <strong>Soban Jawaid</strong><span aria-hidden="true">/</span><span>Software Engineer</span>
+      </a>
+      <nav class="developer-nav scroll-case-nav" aria-label="Case study navigation">
+        <ul class="developer-nav-links">
+          <li><a href="/">Portfolio</a></li>
+          <li><a href="/scrolljournal/">Website</a></li>
+          <li><a href="/scrolljournal/privacy/">Privacy</a></li>
+          <li><a href="/scrolljournal/support/">Support</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="scroll-case-main" id="main-content">
+    <section class="scroll-case-hero" aria-labelledby="scroll-case-title">
+      <div class="scroll-case-hero-copy">
+        <div class="scroll-case-identity">
+          <img src="/scrolljournal/assets/app-icon.png" width="96" height="96" alt="Scroll Journal app icon">
+          <div><span>Native iOS &amp; iPadOS application</span><strong>Privacy-first product design</strong></div>
+        </div>
+        <h1 id="scroll-case-title">Scroll Journal</h1>
+        <p class="scroll-case-tagline">A privacy-first social-media reflection journal for iPhone and iPad.</p>
+        <p class="scroll-case-intro">Scroll Journal helps users move from passive scrolling to intentional reflection. Instead of monitoring applications automatically, it lets users manually record why they opened a platform, how long they spent there, and how their mood changed. The app then turns those entries into clear, locally generated insights.</p>
+        <ul class="scroll-case-badges" aria-label="Technology used"><li>Swift</li><li>SwiftUI</li><li>SwiftData</li><li>PhotosUI</li><li>UserNotifications</li><li>XCTest</li></ul>
+        <div class="scroll-case-actions" aria-label="Scroll Journal links">
+          <a class="dev-button scroll-case-primary" href="/scrolljournal/">Visit website <span aria-hidden="true">↗</span></a>
+          <a class="dev-button" href="/scrolljournal/privacy/">Privacy policy <span aria-hidden="true">↗</span></a>
+          <a class="dev-button" href="/scrolljournal/support/">Support <span aria-hidden="true">↗</span></a>
+        </div>
+        <dl class="scroll-case-facts">
+          <div><dt>Role</dt><dd>Product design, UX, iOS development, data modeling, testing, privacy design, and App Store preparation</dd></div>
+          <div><dt>Platforms</dt><dd>Native iPhone and iPad</dd></div>
+          <div><dt>Data model</dt><dd>Local-only with no backend or account</dd></div>
+        </dl>
+      </div>
+
+      <div class="scroll-case-hero-media" aria-label="Scroll Journal interface previews">
+        <figure class="scroll-case-shot scroll-case-shot-primary">
+          <img src="/projects/scroll-journal/assets/screenshots/journal-home.webp" width="645" height="1398" alt="Scroll Journal home screen showing a completed daily reflection, weekly progress, and today's recorded sessions" fetchpriority="high" decoding="async">
+          <figcaption>Journal home</figcaption>
+        </figure>
+        <figure class="scroll-case-shot scroll-case-shot-secondary">
+          <img src="/projects/scroll-journal/assets/screenshots/weekly-insights.webp" width="645" height="1398" alt="Scroll Journal weekly insights showing completed sessions, average session length, intentional use, mood changes, and reflections" decoding="async">
+          <figcaption>Weekly insights</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <section class="scroll-case-section" aria-labelledby="problem-title">
+      <div class="scroll-case-section-heading">
+        <p class="dev-section-command" aria-hidden="true">01 / product context</p>
+        <h2 id="problem-title"><span aria-hidden="true">#</span> Context that screen-time totals miss.</h2>
+      </div>
+      <div class="scroll-case-duo">
+        <article class="scroll-case-panel">
+          <span class="scroll-case-panel-label">The problem</span>
+          <h3>A number cannot explain an experience.</h3>
+          <p>Social-media screen-time totals explain how long someone used an application, but not why they opened it, what they experienced, or how it affected them. Productive research, messaging, entertainment, comparison, and unintentional scrolling can all appear as the same number.</p>
+        </article>
+        <article class="scroll-case-panel scroll-case-panel-accent">
+          <span class="scroll-case-panel-label">The solution</span>
+          <h3>Reflection without surveillance.</h3>
+          <p>Scroll Journal captures the context behind social-media use through deliberate manual entry. It does not connect to social-media accounts, read Screen Time data, or continuously monitor the user.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="scroll-case-section" aria-labelledby="features-title">
+      <div class="scroll-case-section-heading">
+        <p class="dev-section-command" aria-hidden="true">02 / core features</p>
+        <h2 id="features-title"><span aria-hidden="true">#</span> From individual sessions to useful patterns.</h2>
+        <p>Each feature supports reflection without turning the product into another source of pressure.</p>
+      </div>
+      <div class="scroll-case-feature-grid">
+        <article><span aria-hidden="true">01</span><h3>Intentional session tracking</h3><p>Record the platform, time spent, reason for opening, mood before and after, and relevant tags for every session.</p></article>
+        <article><span aria-hidden="true">02</span><h3>Daily reflections</h3><p>Write one reflection about how social media affected the day, with support for editing recent reflections.</p></article>
+        <article><span aria-hidden="true">03</span><h3>Weekly and monthly insights</h3><p>Review locally calculated patterns, averages, mood changes, intentional-use trends, and frequently recorded platforms.</p></article>
+        <article><span aria-hidden="true">04</span><h3>Creator Library</h3><p>Save a creator name or handle, optional profile link, topics, a note, and a selected screenshot for future reference.</p></article>
+        <article><span aria-hidden="true">05</span><h3>Custom organization</h3><p>Create custom tags and enter any platform name instead of working from a fixed list.</p></article>
+        <article><span aria-hidden="true">06</span><h3>Native iPhone and iPad experience</h3><p>Adaptive SwiftUI layouts support iPhone and iPad, including portrait and landscape orientations on iPad.</p></article>
+      </div>
+    </section>
+
+    <section class="scroll-case-section" aria-labelledby="flows-title">
+      <div class="scroll-case-section-heading">
+        <p class="dev-section-command" aria-hidden="true">03 / user flows</p>
+        <h2 id="flows-title"><span aria-hidden="true">#</span> Small actions, connected into reflection.</h2>
+      </div>
+      <div class="scroll-case-flow-grid">
+        <article>
+          <span class="scroll-case-panel-label">Daily reflection flow</span>
+          <ol><li>Record a session</li><li>Select mood before and after</li><li>Add relevant tags</li><li>Save the session</li><li>Write the daily reflection</li><li>Review weekly or monthly patterns</li></ol>
+        </article>
+        <article>
+          <span class="scroll-case-panel-label">Creator Library flow</span>
+          <ol><li>Discover an informative creator</li><li>Save the creator’s name or handle</li><li>Optionally attach a screenshot or link</li><li>Revisit the creator later</li></ol>
+        </article>
+      </div>
+    </section>
+
+    <section class="scroll-case-section scroll-case-privacy" aria-labelledby="privacy-title">
+      <div class="scroll-case-privacy-intro">
+        <p class="dev-section-command" aria-hidden="true">04 / privacy principles</p>
+        <h2 id="privacy-title"><span aria-hidden="true">#</span> Private by design.</h2>
+        <p>Sessions, reflections, tags, creator details, screenshots, and insights remain on the device. Useful patterns do not require a surveillance model.</p>
+      </div>
+      <ul class="scroll-case-principles">
+        <li>No account or login</li><li>No advertising</li><li>No analytics or tracking</li><li>No third-party SDKs</li><li>No social-account connection</li><li>No automatic Screen Time monitoring</li><li>No external AI service</li><li>No journal content uploaded to a server</li><li>Deterministic on-device insights</li><li>System photo picker for screenshots</li><li>Optional locally scheduled reminders</li><li>No backend dependency</li>
+      </ul>
+    </section>
+
+    <section class="scroll-case-section" aria-labelledby="implementation-title">
+      <div class="scroll-case-section-heading">
+        <p class="dev-section-command" aria-hidden="true">05 / design + engineering</p>
+        <h2 id="implementation-title"><span aria-hidden="true">#</span> Calm on the surface, deliberate underneath.</h2>
+      </div>
+      <div class="scroll-case-duo scroll-case-implementation">
+        <article class="scroll-case-panel">
+          <span class="scroll-case-panel-label">Design direction</span>
+          <h3>Quiet, supportive, and recognizably native.</h3>
+          <p>A calm indigo identity, soft gradients, lightly elevated cards, friendly mood controls, compact tags, and clear hierarchy make the experience reflective rather than judgmental. Native Apple interaction patterns keep the interface familiar across iPhone and iPad.</p>
+          <ul><li>Calm indigo visual identity</li><li>Reflection-focused language</li><li>Clear information hierarchy</li><li>Native interaction patterns</li></ul>
+        </article>
+        <article class="scroll-case-panel">
+          <span class="scroll-case-panel-label">Technical implementation</span>
+          <h3>Native SwiftUI with local persistence.</h3>
+          <p>SwiftData manages sessions, reflections, custom tags, and saved creators. PhotosUI provides privacy-preserving screenshot selection, UserNotifications handles optional local reminders, and a deterministic insight engine produces summaries without an external service.</p>
+          <ul><li>Reusable SwiftUI components</li><li>Adaptive iPhone and iPad layouts</li><li>Validation, editing, and deletion workflows</li><li>XCTest coverage for insights and data rules</li></ul>
+        </article>
+      </div>
+    </section>
+
+    <section class="scroll-case-section" aria-labelledby="decisions-title">
+      <div class="scroll-case-section-heading">
+        <p class="dev-section-command" aria-hidden="true">06 / design decisions</p>
+        <h2 id="decisions-title"><span aria-hidden="true">#</span> Three decisions that shaped the product.</h2>
+      </div>
+      <div class="scroll-case-decision-grid">
+        <article><span aria-hidden="true">01</span><h3>Context instead of surveillance</h3><p>Manual entry was intentional: it enables useful reflection without monitoring other applications.</p></article>
+        <article><span aria-hidden="true">02</span><h3>Sessions and reflections stay distinct</h3><p>The data model separates multiple daily scrolling sessions from the broader one-per-day reflection.</p></article>
+        <article><span aria-hidden="true">03</span><h3>Insights without external AI</h3><p>Weekly and monthly observations use transparent, deterministic calculations performed locally.</p></article>
+      </div>
+    </section>
+
+    <section class="scroll-case-section scroll-case-gallery-section" aria-labelledby="gallery-title">
+      <div class="scroll-case-section-heading">
+        <p class="dev-section-command" aria-hidden="true">07 / interface gallery</p>
+        <h2 id="gallery-title"><span aria-hidden="true">#</span> The product in use.</h2>
+        <p>Real screens from the current iPhone experience, shown without cropping or decorative device frames.</p>
+      </div>
+      <div class="scroll-case-gallery">
+        <figure><img src="/projects/scroll-journal/assets/screenshots/journal-home.webp" width="645" height="1398" alt="Journal home showing a completed daily reflection, weekly check-in progress, and today's sessions" loading="lazy" decoding="async"><figcaption>Journal home</figcaption></figure>
+        <figure><img src="/projects/scroll-journal/assets/screenshots/add-session.webp" width="645" height="1398" alt="Add Session form for date, platform, duration, reason for opening, and mood before and after scrolling" loading="lazy" decoding="async"><figcaption>Add a session</figcaption></figure>
+        <figure><img src="/projects/scroll-journal/assets/screenshots/session-tags.webp" width="645" height="1398" alt="Add Session tag selection with positive, negative, session, and custom tags" loading="lazy" decoding="async"><figcaption>Session tags</figcaption></figure>
+        <figure><img src="/projects/scroll-journal/assets/screenshots/day-detail.webp" width="645" height="1398" alt="Daily detail showing a reflection, mood summary, top tags, and individual scrolling sessions" loading="lazy" decoding="async"><figcaption>Daily reflection and sessions</figcaption></figure>
+        <figure><img src="/projects/scroll-journal/assets/screenshots/journal-history.webp" width="645" height="1398" alt="Journal history with earlier days, session totals, and reflection excerpts" loading="lazy" decoding="async"><figcaption>Journal history</figcaption></figure>
+        <figure><img src="/projects/scroll-journal/assets/screenshots/creator-library.webp" width="645" height="1398" alt="Private Creator Library with search and saved creator cards" loading="lazy" decoding="async"><figcaption>Creator Library</figcaption></figure>
+        <figure><img src="/projects/scroll-journal/assets/screenshots/creator-detail.webp" width="645" height="1398" alt="Saved creator detail with an attached screenshot and a link to open the creator page" loading="lazy" decoding="async"><figcaption>Creator detail</figcaption></figure>
+        <figure><img src="/projects/scroll-journal/assets/screenshots/weekly-insights.webp" width="645" height="1398" alt="Weekly insights showing completed sessions, average duration, intentional use, mood changes, and reflection totals" loading="lazy" decoding="async"><figcaption>Weekly insights</figcaption></figure>
+        <figure><img src="/projects/scroll-journal/assets/screenshots/insight-patterns.webp" width="645" height="1398" alt="Insight overview describing positive changes, recurring tags, opening reasons, and patterns to notice" loading="lazy" decoding="async"><figcaption>Patterns and observations</figcaption></figure>
+      </div>
+    </section>
+
+    <section class="scroll-case-closing" aria-labelledby="closing-title">
+      <span class="scroll-case-panel-label">Scroll Journal</span>
+      <h2 id="closing-title">Designed for more intentional scrolling.</h2>
+      <p>Scroll Journal explores a different approach to digital wellbeing—one based on context, reflection, and user control rather than surveillance. It helps users understand not only how long they scroll, but why they scroll and how the experience affects them.</p>
+      <div class="scroll-case-actions">
+        <a class="dev-button scroll-case-primary" href="/scrolljournal/">Visit website <span aria-hidden="true">↗</span></a>
+        <a class="dev-button" href="/scrolljournal/privacy/">Read privacy policy <span aria-hidden="true">↗</span></a>
+        <a class="dev-button" href="/scrolljournal/support/">Get support <span aria-hidden="true">↗</span></a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="developer-footer systems-footer scroll-case-footer">
+    <p><span class="systems-footer-status" aria-hidden="true"></span> Scroll Journal · Product case study</p>
+    <p><a href="/">Back to Soban Jawaid’s portfolio</a></p>
+  </footer>
+</body>
+</html>
